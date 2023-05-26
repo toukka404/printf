@@ -58,12 +58,9 @@ typedef struct specifier
 	int (*f)(va_list, params_t *);
 } specifier_t;
 
-/*_putchar.c prototype */
+/*_put.c prototype */
 int _putchar(char c);
-
-/*_puts.c prototype*/
 void _puts(char *str);
-
 
 /* print numbers */
 int _strlen(char *s);   /*_strlen.c prototype*/
@@ -83,7 +80,7 @@ int (*get_specifier(char *s))(va_list ap, params_t *params);
 int get_print_func(char *s, va_list ap, params_t *params);
 int get_flag(char *s, params_t *params);
 int get_modifier(char *s, params_t *params);
-char *get_width(char *s, params_t *params);
+char *get_width(char *s, params_t *params, va_list ap);
 
 /* conver_numbers.c prototypes */
 int print_hex(va_list ap, params_t *params);
@@ -108,7 +105,7 @@ int print_S(va_list ap, params_t *params);
 void init_params(params_t *params, va_list ap);
 
 /* string_fields.c prototype */
-char *get_percision(char *p, params_t *params, va_list ap);
+char *get_precision(char *p, params_t *params, va_list ap);
 
 /* _printf.c prototype*/
 int _printf(const char *format, ...);
