@@ -26,7 +26,7 @@
  * @minus_flag: on if _flag specified
  *
  * @width: field width specified
- * @precision: field percision specified
+ * @precision: field precision specified
  *
  * @h_modifier: on if h_modifier is specified
  * @l_modifier: on if l_modifier is specified
