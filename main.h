@@ -11,7 +11,7 @@
 #define BUF_FLUSH -1
 
 #define NULL_STRING "(null)"
-#define PARAMS_INIT (0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+#define PARAMS_INIT {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
 
 #define CONVERT_LOWERCASE 1
 #define CONVERT_UNSIGNED  2
@@ -88,7 +88,7 @@ int print_binary(va_list ap, params_t *params);
 int print_octal(va_list ap, params_t *params);
 
 /* simple_printers.c prototypes */
-int print_from_to(char *start, params_t *params);
+int print_from_to(char *start, char *stop, char *except);
 int print_rev(va_list ap, params_t *params);
 int print_rot13(va_list ap, params_t *params);
 
