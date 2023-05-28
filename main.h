@@ -62,15 +62,14 @@ typedef struct specifier
 int _putchar(char c);
 void _puts(char *str);
 
-/* print numbers */
-int _strlen(char *s);   /*_strlen.c prototype*/
-int _isdigit(int c);    /*_isdigit.c prototype */
-/* print_numbers.c prototype */
+/* number.c */
+int _strlen(char *s);
+int _isdigit(int c);
 int print_number(char *str, params_t *params);
 int print_number_right_shift(char *str, params_t *params);
 int print_number_left_shift(char *str, params_t *params);
 
-/* number.c prototypes */
+/* print_number.c prototypes */
 char *convert(long int num, int base, int flags, params_t *params);
 int print_unsigned(va_list ap, params_t *params);
 int print_address(va_list ap, params_t *params);
@@ -82,7 +81,7 @@ int get_flag(char *s, params_t *params);
 int get_modifier(char *s, params_t *params);
 char *get_width(char *s, params_t *params, va_list ap);
 
-/* conver_numbers.c prototypes */
+/* convert_numbers.c prototypes */
 int print_hex(va_list ap, params_t *params);
 int print_HEX(va_list ap, params_t *params);
 int print_binary(va_list ap, params_t *params);

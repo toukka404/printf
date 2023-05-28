@@ -4,17 +4,18 @@
  * _isdigit - checks if character is digit
  * @c: the character to check
  *
- * return: 1 if digit, 0 otherwise
+ * Return: 1 if digit, 0 otherwise
  */
 int _isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
+
 /**
  * _strlen - returns the length of a string
  * @s: the string whose length to check
  *
- * return: integer length of string
+ * Return: integer length of string
  */
 int _strlen(char *s)
 {
@@ -30,7 +31,7 @@ int _strlen(char *s)
  * @str: the base number as a string
  * @params: the parameter struct
  *
- * return: chars printed
+ * Return: chars printed
  */
 int print_number(char *str, params_t *params)
 {
@@ -56,11 +57,11 @@ int print_number(char *str, params_t *params)
 }
 
 /**
- * print_number_left_shift - prints a number with options
+ * print_number_right_shift - prints a number with options
  * @str: the base number as a string
  * @params: the parameter struct
  *
- * return: chars printed
+ * Return: chars printed
  */
 int print_number_right_shift(char *str, params)
 {
@@ -102,9 +103,9 @@ int print_number_right_shift(char *str, params)
  * @str: the base number as a string
  * @params: the parameter struct
  *
- * return: chars printed
+ * Return: chars printed
  */
-int print_number_right_shift(char *str, params)
+int print_number_left_shift(char *str, params)
 {
 	unsigned int n = 0, neg, neg2, i = _strlen(str);
 	char pad_char = ' ';
