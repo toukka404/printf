@@ -60,7 +60,7 @@ typedef struct specifier
 
 /*_put.c prototype */
 int _putchar(char c);
-void _puts(char *str);
+int _puts(char *str);
 
 /* number.c */
 int _strlen(char *s);
